@@ -17,7 +17,7 @@
     transition: 3s;
 }
 
-.ex-2-square:hover{
+.ex-2-square:active{
     width: 100%;
     background-color: blue;
 }
@@ -28,8 +28,8 @@
     background: red;
     transition: 5s;
 }
-/* c'è il box sizing border box? se metto un valore più alto che succede?
-note to self: to turn your square into a circle, set the border-radius property on your element to exactly half of your element's total width or height */
+/* note to self: to turn your square into a circle, set the border-radius property on your element to exactly half of your element's total width or height.
+mettendo un valore uguale alla metà perà viene leggermente squadrato anche utilizzando un valore più alto che consideri un'eventuale assenza di box sizing border box */
 
 .ex-3-square:hover{
     border-radius: 100px;
@@ -45,7 +45,7 @@ note to self: to turn your square into a circle, set the border-radius property 
 .ex-4-square:hover{
     opacity: 0.0;
 }
-/* note to self, javascript needed for clicks? */
+/* usiamo active */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -53,10 +53,15 @@ note to self: to turn your square into a circle, set the border-radius property 
     background: red;
     transition: 5s;
 }
-
+/* forse sarebbe meglio usare scale al posto di aumentare e diminuire i valori di grandezza e altezza ma non avendolo ancora visto mi attengo a questi ultimi */
 .ex-5-square:hover{
     width: 80px;
     height: 80px;
+}
+
+.ex-5-square:active{
+    width: 40px;
+    height: 40px;
 }
 
 .ex-6-img, .ex-7-img, .ex-8-img {
@@ -87,13 +92,55 @@ note to self: to turn your square into a circle, set the border-radius property 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 2s;
 }
+
+.ex-9-img:hover{
+    filter: sepia(2) brightness(1.5);
+    border-radius: 30px;
+    scale: 1.4;
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation-name: rotate-ten;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
+
+@keyframes rotate-ten{
+    0% {
+        transform: rotate(360deg);
+    }
+/* ho aggiunto qualche effetto per provare e diversificare, senza il valore del 50% la rotazione è più lineare */
+    50% {
+        transform: rotate(90deg);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: rotate-eleven 3s linear;
+}
+
+@keyframes rotate-eleven{
+    0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
