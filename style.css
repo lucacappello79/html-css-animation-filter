@@ -132,12 +132,12 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
         transform: rotate(0);
     }
 
-    50%{
-        transform: rotate(180deg);
+    75%{
+        transform: rotate(290deg);
     }
 
-    75%{
-        transform: rotate(270deg);
+    0%{
+        transform: rotate(0);
     }
 }
 
@@ -196,6 +196,7 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
     text-align: center;
     text-decoration: none;
 }
+
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
