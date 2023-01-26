@@ -141,6 +141,48 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
     }
 }
 
+.ex-12-button:hover{
+    text-decoration: underline;
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation: motion-12top 2s linear;
+}
+
+@keyframes motion-12top{
+    0%{
+       left: 10%;
+    }
+
+    50%{
+        left: 55%;
+    }
+
+    100%{
+        left: 10%;
+     }
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: motion-12bottom 2s linear;
+}
+
+@keyframes motion-12bottom{
+    0%{
+       right: 20%;
+    }
+
+    50%{
+        right: 55%;
+    }
+
+    100%{
+        right: 20%;
+     }
+}
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
