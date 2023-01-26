@@ -113,9 +113,9 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
     0% {
         transform: rotate(360deg);
     }
-/* ho aggiunto qualche effetto per provare e diversificare, senza il valore del 50% la rotazione è più lineare */
-    50% {
-        transform: rotate(90deg);
+
+    100%{
+        transform: rotate(0deg);
     }
 }
 
