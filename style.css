@@ -2,7 +2,7 @@
     width: 100px;
     height: 100px;
     border: 1px solid red;
-    transition: 10s;
+    transition: 5s;
 }
 
 .ex-1-square:hover{
@@ -178,10 +178,66 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
 
     100%{
         right: 20%;
+    }
+}
+
+.ex-13-top-white{
+    border: 1px solid red;
+}
+
+.ex-13-button:hover .ex-13-top-white{
+    animation: motion-13top 2s linear;
+}
+
+@keyframes motion-13top{
+    0%{
+        left: 10%;
+    }
+    
+    25%{
+        left: 75%;
+    }
+
+    50%{
+        left: 75%;
+        top: 70%;
+    }
+
+    75%{
+        left: 50%;
+        top: 70%;
+    }
+    
+    100%{
+        left: 10%;
+        top: 70%;
      }
 }
 
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: motion-13bottom 2s linear;
+}
 
+/* @keyframes motion-13bottom{
+    0%{
+        right: 10%;
+    }
+    
+    25%{
+        right: 70%;
+    }
+    
+    50%{
+        right: 70%;
+        bottom: 10%;
+     }
+
+     75%{
+
+     }
+
+
+} */
 
 .ex-12-button, .ex-13-button {
     position: relative;
