@@ -191,26 +191,33 @@ mettendo un valore uguale alla metà perà viene leggermente squadrato anche uti
 
 @keyframes motion-13top{
     0%{
-        left: 10%;
+        top: -10px;
+        left: -10%;
     }
     
     25%{
-        left: 75%;
+        left: 85%;
+        top: -10%;
     }
 
     50%{
-        left: 75%;
-        top: 70%;
+        top: 55px;
+        left: 85%;
     }
 
     75%{
-        left: 50%;
-        top: 70%;
+        left: -10%;
+        top: 55px;
+    }
+
+    90%{
+        left: -10%;
+        top: -10px;
     }
     
     100%{
         left: 10%;
-        top: 70%;
+        top: -10px;
      }
 }
 
